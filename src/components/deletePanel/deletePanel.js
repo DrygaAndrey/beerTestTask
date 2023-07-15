@@ -1,13 +1,9 @@
 import './deletePanel.scss';
-import { useEffect } from 'react';
 import useStore from '../../appState';
 
 
 function DeletePanel() {
-    const { selectedRecipes, setSelectedRecipes, recipes, setRecipes} = useStore();
-    useEffect(() => {
-
-    }, [selectedRecipes]);
+    const { selectedRecipes, setSelectedRecipes, recipes, setRecipes } = useStore();
 
     const deleteRecipes = () => {
         const filteredObjects = recipes.filter(obj => !selectedRecipes.includes(obj.id));
