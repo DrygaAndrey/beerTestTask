@@ -50,7 +50,7 @@ function DetailsPage() {
 
             </div>
             <div className='picture'>
-                <img src={recipe.image_url} alt={`${recipe.name}`} />
+                <img src={recipe.image_url} alt={recipe.name} />
             </div>
             <button onClick={buttonHandler}>⬅</button>
         </div>

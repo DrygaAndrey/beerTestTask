@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 function RecipeComponent({ recipe, }) {
     const [className, setClassName] = useState('recipeComponent');
-    const { selectedRecipes, setSelectedRecipes} = useStore();
+    const { selectedRecipes, setSelectedRecipes } = useStore();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -41,7 +41,7 @@ function RecipeComponent({ recipe, }) {
                 <h4>{recipe.tagline}</h4>
             </div>
             <div className='picture'>
-                <img src={recipe.image_url} alt={`${recipe.name}`} />
+                <img src={recipe.image_url} alt={recipe.name} />
             </div>
 
         </div>
