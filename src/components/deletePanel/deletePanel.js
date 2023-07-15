@@ -26,8 +26,6 @@ function DeletePanel() {
                 </div>
             )}
         </>
-
-
     );
 }
 
