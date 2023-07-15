@@ -1,0 +1,36 @@
+.recipeComponent {
+    display: flex;
+    height: 400px;
+    border-radius: 30px;
+    background-color: #d7d7d7;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding: 20px;
+    width: 16%;
+    flex-direction: column;
+    align-items: center;
+    .picture{
+        display: flex;
+        height: 75%;
+    }
+    img {
+        height: 100%;
+    }
+    h2{
+        margin: 0px;
+    } 
+    h4{
+        margin: 0px;
+    }
+
+    &:hover {
+        background-color: #bdbdbd;
+    }
+}
+
+.selected {
+    background-color: #919191;
+    &:hover {
+        background-color: #919191;
+    }
+}

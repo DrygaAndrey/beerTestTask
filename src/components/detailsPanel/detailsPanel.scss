@@ -1,0 +1,82 @@
+.detailsPanel {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/188/871/659/beer-wallpaper-preview.jpg);
+    background-position: center center;
+    background-size: cover;
+
+    height: 80%;
+    color: white;
+    position: fixed;
+    top: 50%;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+
+    button {
+        position: absolute;
+        top: 3%;
+        left: 1%;
+        padding: 0px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        border-radius: 3px;
+        border: none;
+        background-color: #ffffffe0;
+    }
+
+    .picture {
+        padding: 5px;
+        display: flex;
+        background-color: #ffffff52;
+        width: 25%;
+        border-radius: 20px;
+        justify-content: center;
+    }
+
+    .info {
+        width: 65%;
+        overflow: auto;
+
+        p {
+            margin: 0px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: rgba(173, 173, 173, 0.479);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #fafafa;
+            border-radius: 20px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+    }
+
+}
